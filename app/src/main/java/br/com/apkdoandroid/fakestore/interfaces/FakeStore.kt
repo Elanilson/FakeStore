@@ -5,6 +5,6 @@ import retrofit2.Response
 import retrofit2.http.GET
 
 interface FakeStore {
-    @GET("products")
+    @GET("products/category/electronics")
     suspend fun getProdutos() : Response<List<Produto>>
 }

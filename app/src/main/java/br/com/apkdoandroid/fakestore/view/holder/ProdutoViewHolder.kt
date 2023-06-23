@@ -10,5 +10,6 @@ class ProdutoViewHolder( private val binding: ProdutoBinding) : RecyclerView.Vie
     fun bind(produto: Produto){
         Glide.with(binding.root).load(produto.image).into(binding.imageViewProduto);
         binding.textViewTituloProduto.text = produto.title
+        binding.textViewPreco.text = "R$ ${produto.price}"
     }
 }
